@@ -6,7 +6,7 @@ const usernameSuccessOutput = document.querySelector(".usernameSuccessOutput");
 const emailField = document.querySelector("#emailField");
 const emailFeedBackArea = document.querySelector(".emailFeedBackArea");
 
-const passwordField = document.querySelector("#passwordField");
+const passwordField = document.querySelector("#passwordField,#passwordField2");
 const showPasswordToggle = document.querySelector(".showPasswordToggle");
 const submitBtn = document.querySelector(".submit-btn");
 const handleToggleInput = (e) => {

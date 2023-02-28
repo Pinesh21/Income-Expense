@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="row">
+<div class="row" xmlns="http://www.w3.org/1999/html">
   <div class="col-md-4"></div>
   <div class="col-md-4">
     <div class="card mt-5">
@@ -14,7 +14,6 @@
         </div>
         <form action="{% url 'register' %}" method="post">
           {% csrf_token %}
-
           {% include 'partials/_messages.html' %}
           <div class="form-group">
             <input
@@ -56,6 +55,13 @@
           </div>
           <input type="submit" value="Register" class="btn btn-block btn-primary submit-btn" />
         </form>
+
+
+
+         <div class="container">
+          <span class="text-lead lead">Already have account? <a href="{% url 'login' %}">Login</a> </span></br>
+          <span class="text-lead lead">Forgot? <a href="{% url 'request-password' %}">Reset</a> </span>
+        </div>
 
       </div>
 
